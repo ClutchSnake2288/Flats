@@ -1,0 +1,328 @@
+*
+    margin: 0
+    padding: 0
+h2
+        text-align: center
+        font-family: "Poppins",sans-serif
+.sliderButtons
+    text-align: center 
+    
+    button
+        border-radius: 30px
+        background-color: white
+        border: none
+        box-shadow: 0 0 15px #222222ad
+        padding: 0 40px
+        height: 40px
+        line-height: 40px
+        display: inline-block
+        background-image: url("imgs/rightArrow.svg")
+        background-size: 20%
+        background-repeat: no-repeat
+        background-position: center
+        cursor: pointer
+        &:hover
+            transform: scale(0.95)
+        &:first-child
+            transform: scaleX(-1)
+            &:hover
+                transform: scale(-0.95)
+        
+.modal
+    backdrop-filter: blur(10px)
+    position: fixed
+    width: 100%
+    height: 100%
+    z-index: 10
+    top: 0
+    left: 0
+    display: flex
+    justify-content: center
+    align-items: center
+    opacity: 0
+    pointer-events: none
+    transition: .3s
+    form
+        background-color: white
+        display: flex
+        max-width: 250px
+        flex-direction: column
+        gap: 7px 
+        padding: 10px
+        width: 90%  
+        box-shadow: 0 0 10px #242424ab
+        border-radius: 5px
+        input,button
+            height: 40px
+            border: 1px solid #24242450 
+            border-radius: 3px
+            padding: 0 5px
+            font-family: "Poppins",sans-serif
+            background-color: #fff
+            color: #222
+            cursor: pointer
+            
+
+
+        h3
+            color: #24242450
+            font-family: "Poppins",sans-serif
+            text-align: center
+html
+    position: relative
+    // z-index: -2
+
+.phoneButton
+    display: flex
+    align-items: center
+    gap: 5px
+    img
+        height: 20px
+
+.container
+    max-width: 1200px
+    width: 90%
+    margin: auto
+.card
+    box-shadow: 0 0 5px black
+    width: 30%
+    display: block
+    margin:  15px
+    
+    font-family: "Poppins",sans-serif
+    ul
+        list-style: none
+        display: flex
+        align-items: center
+    .cardInfo
+        padding: 10px
+    .logo1
+        background-image: url("imgs/personIcon.svg")
+        width: 20px
+        height: 20px
+        display: block
+        background-size: 50%
+        background-repeat: no-repeat
+        background-position: center
+    .logo2
+        background-image: url("imgs/bedIcon.svg")
+        width: 20px
+        height: 20px
+        display: block
+        background-size: 50%
+        background-repeat: no-repeat
+        background-position: center    
+    img
+        width: 100%
+
+
+#callMe
+    border: 1px solid white
+    border-radius: 20px
+    line-height: 30px
+
+header
+    background-color: #242424
+    
+    .container
+        display: flex
+        // flex-direction: column-reverse
+        justify-content: space-between
+        a
+            display: block
+            line-height: 40px
+            padding: 0 15px
+            text-decoration: none
+            font-family: "Poppins",sans-serif
+            color: white
+            &:hover
+                background-color: #424242
+        .left
+            display: flex
+            .logo
+                background-image: url("imgs/logoIcon.svg")
+                width: 40px
+                height: 40px
+                display: block
+                background-size: 50%
+                background-repeat: no-repeat
+                background-position: center
+            ul
+                display: flex
+                list-style: none
+                li
+                    position: relative
+                    &:hover
+                        nav
+                            transform: none
+                    nav
+                        position: absolute
+                        background-color: #242424
+                        top: 40px
+                        left: 0
+                        transform: translateY(-100%)
+                        z-index: -1
+
+        .right
+            align-items: center
+            display: flex
+            .phoneButton
+                display: flex
+main
+    .cards
+        justify-content: center
+        display: flex
+        flex-wrap: wrap
+
+.sliderContainer
+    overflow: hidden
+    .sliderButtons
+        transform: translateY(-50%)
+    
+        
+    .slider
+        display: flex
+        width: 300%
+        background-color: pink
+        transition: 0.6s
+        .slide
+            flex: 1
+            background-size: cover
+            background-position: center
+            
+            &:first-child
+                background-image: url("imgs/flat5.jpg")
+            &:nth-child(2)
+                background-image: url("imgs/flat0.jpg")
+            &:last-child
+                
+                background-image: url("imgs/flat6.jpg")
+            p
+                background-color: #000000c4
+                color: white
+                font-family:  "Poppins", sans-serif 
+                font-size: 12px   
+                width: 60%
+                border-radius: 5px
+                padding: 15px
+                margin-bottom: 40px       
+            h2
+                font-family: "Poppins", sans-serif
+                text-shadow: 0 5px 15px #00000085
+                color: white
+                font-size: 80px
+                line-height: 70px
+                margin: 40px 0
+            a
+                text-decoration: none
+                color: #222222
+                background-color: #fff
+                padding: 0 15px
+                border-radius: 30px
+                height: 40px
+                display: inline-block
+                line-height: 40px
+                box-shadow: 0 0 5px #222222c8
+                margin-bottom: 40px
+                font-family: "Poppins",sans-serif
+footer
+    background-color: #242424
+    padding: 40px 0
+    .container
+        display: flex
+        // flex-direction: column-reverse
+        justify-content: space-between
+        a
+            display: block
+            line-height: 40px
+            padding: 0 15px
+            text-decoration: none
+            font-family: "Poppins",sans-serif
+            color: white
+            &:hover
+                background-color: #424242
+        .left
+            display: flex
+            .logo
+                background-image: url("imgs/logoIcon.svg")
+                width: 40px
+                height: 40px
+                display: block
+                background-size: 50%
+                background-repeat: no-repeat
+                background-position: center
+            ul
+                display: flex
+                list-style: none
+                li
+                    position: relative
+                    &:hover
+                        nav
+                            transform: none
+                    nav
+                        position: absolute
+                        background-color: #242424
+                        top: 40px
+                        left: 0
+                        transform: translateY(-100%)
+                        z-index: -1
+
+        .rightTop
+            align-items: center
+            display: flex
+            .loc
+                display: flex
+                align-items: center
+                gap: 5px
+                img
+                    height: 20px
+
+            .phoneButton
+                display: flex
+        .rightBottom
+            display: flex
+            justify-content: flex-end
+            a
+                display: block
+                width: 40px
+                height: 40px
+                background-image: url("imgs/mailIcon.svg")
+                background-size: 30%
+                background-position: center
+                background-repeat: no-repeat
+                &#vk
+                    background-image: url("imgs/vkIcon.svg")
+                &#fb
+                    background-image: url("imgs/fbIcon.svg")
+                &#inst
+                    background-image: url("imgs/igIcon.svg")  
+.comms
+    margin: auto
+    .commentPair
+        display: none
+        &.activePair
+            display: flex
+        .commCard
+            box-shadow: 0 0 5px black
+            
+            
+            margin:  15px
+            padding: 15px
+            p
+            font-family: "Poppins",sans-serif
+            color: #222
+            .person
+                margin-top: 15px
+                font-family: "Poppins",sans-serif
+                gap: 12px
+                display: flex
+                color: #555
+                img
+                    height: 40px
+                    width: 40px
+                    object-fit: cover
+                    border-radius: 100px
+
+    
+
+
